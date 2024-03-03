@@ -2,7 +2,7 @@
 using namespace std;
 class X
 {
-	protected:
+	public:
 		int a;
 		public:
 			X(int x)
@@ -28,7 +28,7 @@ class Y : public X
 
 int main()
 {
-	Y obj(1,2);
+	Y obj(23,29);
 	obj.print_data();
 	
 }

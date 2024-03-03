@@ -2,7 +2,7 @@
 using namespace std;
 class x
 {
-protected :
+public:
 int a;
 public:
 void set_data()

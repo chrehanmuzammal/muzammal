@@ -2,7 +2,7 @@
 using namespace std;
 class student
 {
-protected :
+public :
 string name;
 int roll_no;
 int avg;
@@ -28,7 +28,7 @@ int year;
 public:
    void set_data1()
    {
-   set_data();
+  // set_data();
    semester = 2;
    year = 1;
 }
@@ -40,13 +40,13 @@ public:
 }
    	
 };
-class MS_Student : public Graduate_Student
+class ms_student : public graduate_student
 {
 	int newid;
 	public :
 		void set_data2()
 		{
-			set_data1();
+			//set_data1();
 			newid = 123456;
 		}
 		void print_data2()
@@ -57,16 +57,11 @@ class MS_Student : public Graduate_Student
 };
 int main()
 {
-	student Rehan;
-	Rehan.set_data();
-	Rehan.print_data();
 	
-	  cout<<" ___________ "<<endl;
-	  cout<<"             "<<endl;
 	  
-	  MS_student Rehan;
-	  Rehan.set_data2();
-	  Rehan.print_data2();
+	  ms_student Rehan1;
+	 // Rehan1.set_data2();
+	  Rehan1.print_data2();
 	  
 	  
 }
